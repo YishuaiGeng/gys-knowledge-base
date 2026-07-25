@@ -1,3 +1,61 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// ===== 首页 Dashboard =====
+body[data-slug="index"] {
+  // 顶部标语
+  article > blockquote:first-of-type {
+    border-left: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+    color: var(--gray);
+    font-style: italic;
+  }
+
+  // 空间导航卡片网格（紧跟 h2 的顶层列表）
+  article > h2 + ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.75rem;
+
+    > li {
+      margin: 0;
+      padding: 0.85rem 1rem;
+      border: 1px solid var(--lightgray);
+      border-radius: 12px;
+      background-color: var(--light);
+      font-size: 0.9rem;
+      color: var(--darkgray);
+      transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        border-color 0.15s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        border-color: var(--secondary);
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+      }
+
+      > a:first-child {
+        display: block;
+        font-weight: $boldWeight;
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+        background-color: transparent;
+      }
+    }
+  }
+
+  // GitHub 贡献热力图
+  .gh-chart {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--lightgray);
+    border-radius: 12px;
+    background-color: var(--light);
+  }
+}
