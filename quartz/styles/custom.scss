@@ -3,7 +3,8 @@
 // ===== 首页 Dashboard =====
 body[data-slug="index"] {
   // 顶部标语
-  article > blockquote:first-of-type {
+  article > blockquote:first-of-type,
+  article .markdown-rendered > blockquote:first-of-type {
     border-left: none;
     padding-left: 0;
     font-size: 1.1rem;
@@ -11,8 +12,9 @@ body[data-slug="index"] {
     font-style: italic;
   }
 
-  // 空间导航卡片网格（紧跟 h2 的顶层列表）
-  article > h2 + ul {
+  // 空间导航卡片网格（紧跟 h2 的顶层列表；兼容主题的 markdown-rendered 包装层）
+  article > h2 + ul,
+  article .markdown-rendered > h2 + ul {
     list-style: none;
     padding: 0;
     margin: 1rem 0 1.5rem;
