@@ -218,10 +218,19 @@ plugins:
       priority: 5
       condition: not-index
   - source: "@quartz-community/comments"
-    enabled: false
+    enabled: true
     options:
       provider: giscus
-      options: {}
+      options:
+        repo: YishuaiGeng/gys-knowledge-base
+        repoId: R_kgDOTjFG5w
+        category: Announcements
+        categoryId: DIC_kwDOTjFG584DB8J0
+        mapping: url
+        strict: true
+        reactionsEnabled: true
+        inputPosition: bottom
+        lang: zh-CN
     layout:
       position: afterBody
       priority: 10
