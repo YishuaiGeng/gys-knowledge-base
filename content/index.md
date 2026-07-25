@@ -17,6 +17,7 @@ description: A place where I collect, learn, think and create.
 - [[Projects/index|🚀 Projects]] — 项目记录
 - [[Planner/index|📅 Planner]] — 计划管理
 - [[Goals/index|🎯 Goals]] — 目标与里程碑
+- [[Meta/写作规范|📐 写作规范]] — 本空间的笔记约定
 
 ## 🔭 关于这个空间
 

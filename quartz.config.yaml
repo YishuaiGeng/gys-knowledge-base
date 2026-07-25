@@ -15,8 +15,8 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
+      header: Noto Sans SC
+      body: Noto Sans SC
       code: IBM Plex Mono
     colors:
       lightMode:
@@ -232,7 +232,16 @@ plugins:
         GitHub: https://github.com/YishuaiGeng
         Powered by Quartz: https://quartz.jzhao.xyz
   - source: "@quartz-community/recent-notes"
-    enabled: false
+    enabled: true
+    options:
+      title: 最近更新
+      limit: 5
+      showTags: false
+      hideTagPages: true
+      hideFolderPages: true
+    layout:
+      position: right
+      priority: 40
   - source: "@quartz-community/spacer"
     enabled: true
     options: {}
