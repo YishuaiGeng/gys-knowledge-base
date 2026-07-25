@@ -6,7 +6,7 @@ configuration:
   enablePopovers: true
   analytics: null
   locale: zh-CN
-  baseUrl: gengyishuai.github.io/gys-knowledge-base
+  baseUrl: yishuaigeng.github.io/gys-knowledge-base
   ignorePatterns:
     - private
     - templates
@@ -229,7 +229,7 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/gengyishuai
+        GitHub: https://github.com/YishuaiGeng
         Powered by Quartz: https://quartz.jzhao.xyz
   - source: "@quartz-community/recent-notes"
     enabled: false

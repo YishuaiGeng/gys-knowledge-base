@@ -19,4 +19,4 @@ tags:
 
 ## 🔗 链接
 
-- GitHub: <https://github.com/gengyishuai>
+- GitHub: <https://github.com/YishuaiGeng>
